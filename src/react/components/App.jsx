@@ -1,5 +1,6 @@
 import React from 'react';
 import { Routes, Route } from 'react-router-dom';
+import Header from './Header';
 import Home from './pages/Home';
 import Ferrous from './pages/Ferrous';
 import Non_Ferrous from './pages/Non_Ferrous';
@@ -10,6 +11,7 @@ import '../../scss/style.scss';
 export default function App() {
   return (
     <React.Fragment>
+      <Header/>
       <Routes>
         <Route path='/' element={<Home/>}/>
         <Route path='/ferrous' element={<Ferrous/>}/>

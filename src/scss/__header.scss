@@ -1,0 +1,68 @@
+@media screen and (max-width: 767px) {
+  header {
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    padding: 20px;
+
+    #header-logo-wrap {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      > img {
+        max-width: 50%;
+        height: 30px;
+      }
+
+      #burger-wrap {
+        position: relative;
+        width: 22px;
+        height: 20px;
+        z-index: 2;
+        cursor: pointer;
+  
+        span {
+          position: absolute;
+          width: 22px;
+          height: 2px;
+          background-color: #000000;
+          transition: all 0.25s ease-in-out;
+          font-family: Arial, Helvetica, sans-serif;
+          font-size: 10px;
+        }
+  
+        .upper-line {
+          left: 0;
+        }
+      
+        .upper-line-active {
+          transform: translateY(10px) translateY(-50%) rotate(-45deg);
+        }
+      
+        .mid-line {
+          margin: 9px 0;
+          top: 0;
+          left: 0;
+        }
+      
+        .mid-line-active {
+          opacity: 0;
+        }
+      
+        .down-line {
+          left: 0;
+          bottom: 0;
+        }
+      
+        .down-line-active {
+          transform: translateY(-10px) translateY(50%) rotate(45deg);
+        }
+      }
+    }
+  }
+}

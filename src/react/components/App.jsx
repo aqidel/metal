@@ -6,6 +6,7 @@ import Ferrous from './pages/Ferrous';
 import Non_Ferrous from './pages/Non_Ferrous';
 import About from './pages/About';
 import Contact from './pages/Contact';
+import Footer from './Footer';
 import '../../scss/style.scss';
 
 export default function App() {
@@ -19,6 +20,7 @@ export default function App() {
         <Route path='/about' element={<About/>}/>
         <Route path='/contact' element={<Contact/>}/>
       </Routes>
+      <Footer/>
     </React.Fragment>
   );
 }

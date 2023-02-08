@@ -326,5 +326,35 @@
         }
       }
     }
+
+    #work-time {
+      padding: 70px 10px 30px;
+      background-image: url(../images/cran.webp);
+      background-position: bottom center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      h2 {
+        margin: 20px 0;
+        font-family: Montserrat Bold, sans-serif;
+        font-weight: 700;
+        font-size: 30px;
+        font-style: normal;
+        line-height: 30px;
+        text-align: center;
+        text-transform: uppercase;
+        color: #ffffff;
+      }
+
+      p {
+        margin: 0;
+        font-family: Montserrat Light, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: center;
+        color: #ffffff;
+      }
+    }
   }
 }

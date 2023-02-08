@@ -1,0 +1,110 @@
+@media screen and (max-width: 767px) {
+  #steps-wrap {
+    padding: 60px 25px;
+
+    > h2 {
+      margin: 0 0 70px 0;
+      font-family: Montserrat Bold, sans-serif;
+      font-weight: 700;
+      font-style: normal;
+      font-size: 30px;
+      line-height: 30px;
+      text-align: center;
+      text-transform: uppercase;
+      color: #000000;
+    }
+
+    #step-one, #step-two {
+      margin-bottom: 50px;
+    }
+
+    .anim-from-right {
+      animation-name: fromRight;
+      animation-duration: 1.25s;
+    }
+
+    @keyframes fromRight {
+      0% {
+        opacity: 0;
+        transform: translate3d(100%, 0, 0);
+      }
+
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .anim-from-left {
+      animation-name: fromLeft;
+      animation-duration: 1.25s;
+    }
+
+    @keyframes fromLeft {
+      0% {
+        opacity: 0;
+        transform: translate3d(-100%, 0, 0);
+      }
+
+      100% {
+        opacity: 1;
+        transform: none;
+      }
+    }
+
+    .step {
+
+      .step-number {
+        padding: 10px;
+
+        h1 {
+          margin: 0 0 20px 0;
+          font-family: Montserrat Bold, sans-serif;
+          font-weight: 700;
+          font-size: 60px;
+          font-style: normal;
+          line-height: 60px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #e95253;
+        }
+
+        p {
+          margin: 0;
+          font-family: Montserrat Bold, sans-serif;
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 20px;
+          text-align: center;
+          text-transform: uppercase;
+          color: #000000;
+        }
+      }
+
+      .step-text {
+        padding: 10px;
+
+        h3 {
+          margin: 0 0 30px 0;
+          font-family: Montserrat Light, sans-serif;
+          font-weight: 300;
+          font-size: 25px;
+          font-style: normal;
+          line-height: 30px;
+          text-align: center;
+          color: #000000;
+        }
+
+        p {
+          margin: 0;
+          font-family: Montserrat Light, sans-serif;
+          font-weight: 300;
+          font-size: 16px;
+          line-height: 25px;
+          text-align: center;
+          color: #777777;
+        }
+      }
+    }
+  }
+}

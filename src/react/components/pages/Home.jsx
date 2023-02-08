@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Stars from '../Stars';
+import Steps from '../Steps';
 import ferrous from '../../../images/ferrous/ferrous_metal.webp';
 import non_ferrous from '../../../images/non_ferrous/non_ferrous_metal.webp';
 
@@ -67,6 +68,18 @@ export default function Home() {
             <h2>Цветные металлы</h2>
           </Link>
         </div>
+      </div>
+      <Steps/>
+      <div id='work-time'>
+        <h2>Привозите Ваш металл на наш склад в г. Уфа</h2>
+        <p>
+          ООО "БашМетЛом"
+          <br/>
+          г. Уфа, ул. Рабкоров, д. 1/1
+        </p>
+        <p>
+          <b>Понедельник - пятница с 10:00 до 19:00, суббота - воскресенье с 10:00 до 16:45</b>
+        </p>
       </div>
     </main>
   );

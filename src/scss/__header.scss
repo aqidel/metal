@@ -64,5 +64,37 @@
         }
       }
     }
+
+    #nav-closed {
+      display: none;
+    }
+
+    #nav-open {
+      position: absolute;
+      top: 70px;
+      right: 0;
+      width: 100%;
+      min-height: calc(100vh - 70px);
+      padding: 80px 50px 0;
+      box-sizing: border-box;
+      background-color: #ffffff;
+      z-index: 1;
+
+      a {
+        display: block;
+        padding: 10px 0;
+        font-family: Montserrat Regular, sans-serif;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 20px;
+        text-align: center;
+        text-decoration: none;
+        color: #000000;
+      }
+
+      > div {
+        border-bottom: 1px solid #000000;
+      }
+    }
   }
 }

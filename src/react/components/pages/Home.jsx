@@ -4,6 +4,7 @@ import Stars from '../Stars';
 import Steps from '../Steps';
 import ferrous from '../../../images/ferrous/ferrous_metal.webp';
 import non_ferrous from '../../../images/non_ferrous/non_ferrous_metal.webp';
+import arrow from '../../../images/arrow.webp';
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
             <br/>
             <p>✚ Широкий ассортимент</p>
           </h2>
+          <img id='arrow' src={arrow} alt='img'/>
         </div>
         <div id='main-info-bottom'>
           <h3>Наш телефон: <br/> +7 (937) 498-67-40</h3>
@@ -107,7 +109,11 @@ export default function Home() {
         </h2>
         <br/>
         <br/>
-        <h2>Звоните по номеру: <b>+7 (937) 498-67-40</b></h2>
+        <h2>
+          Звоните по номеру:
+          <br/> 
+          <b>+7 (937) 498-67-40</b>
+        </h2>
       </div>
     </main>
   );

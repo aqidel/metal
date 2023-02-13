@@ -1,99 +1,147 @@
-@media screen and (max-width: 767px) {
-  header {
+header {
+  display: flex;
+  justify-content: end;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  padding: 20px;
+
+  #header-logo-wrap {
+    width: 100%;
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
+    align-items: center;
+
+    > img {
+      max-width: 50%;
+      height: 30px;
+    }
+
+    #burger-wrap {
+      position: relative;
+      width: 22px;
+      height: 20px;
+      z-index: 2;
+      cursor: pointer;
+
+      span {
+        position: absolute;
+        width: 22px;
+        height: 2px;
+        background-color: #000000;
+        transition: all 0.25s ease-in-out;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 10px;
+      }
+
+      .upper-line {
+        left: 0;
+      }
+    
+      .upper-line-active {
+        transform: translateY(10px) translateY(-50%) rotate(-45deg);
+      }
+    
+      .mid-line {
+        margin: 9px 0;
+        top: 0;
+        left: 0;
+      }
+    
+      .mid-line-active {
+        opacity: 0;
+      }
+    
+      .down-line {
+        left: 0;
+        bottom: 0;
+      }
+    
+      .down-line-active {
+        transform: translateY(-10px) translateY(50%) rotate(45deg);
+      }
+    }
+  }
+
+  #nav-closed {
+    display: none;
+  }
+
+  #nav-open {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: absolute;
-    top: 0;
+    top: 70px;
     right: 0;
-    left: 0;
-    padding: 20px;
+    width: 100%;
+    min-height: calc(100vh - 70px);
+    padding: 80px 50px 0;
+    box-sizing: border-box;
+    background-color: #ffffff;
+    z-index: 1;
+
+    a {
+      display: block;
+      padding: 10px 0;
+      font-family: Montserrat Regular, sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 20px;
+      text-align: center;
+      text-decoration: none;
+      color: #000000;
+    }
+
+    > div {
+      width: 220px;
+      border-bottom: 1px solid #000000;
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  header {
+    justify-content: space-between;
+    position: static;
 
     #header-logo-wrap {
-      width: 100%;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+      width: auto;
 
       > img {
-        max-width: 50%;
-        height: 30px;
+        width: 100px;
+        max-width: none;
+        height: 40px;
       }
 
       #burger-wrap {
-        position: relative;
-        width: 22px;
-        height: 20px;
-        z-index: 2;
-        cursor: pointer;
-  
-        span {
-          position: absolute;
-          width: 22px;
-          height: 2px;
-          background-color: #000000;
-          transition: all 0.25s ease-in-out;
-          font-family: Arial, Helvetica, sans-serif;
-          font-size: 10px;
-        }
-  
-        .upper-line {
-          left: 0;
-        }
-      
-        .upper-line-active {
-          transform: translateY(10px) translateY(-50%) rotate(-45deg);
-        }
-      
-        .mid-line {
-          margin: 9px 0;
-          top: 0;
-          left: 0;
-        }
-      
-        .mid-line-active {
-          opacity: 0;
-        }
-      
-        .down-line {
-          left: 0;
-          bottom: 0;
-        }
-      
-        .down-line-active {
-          transform: translateY(-10px) translateY(50%) rotate(45deg);
-        }
+        display: none;
       }
     }
 
     #nav-closed {
-      display: none;
-    }
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
 
-    #nav-open {
-      position: absolute;
-      top: 70px;
-      right: 0;
-      width: 100%;
-      min-height: calc(100vh - 70px);
-      padding: 80px 50px 0;
-      box-sizing: border-box;
-      background-color: #ffffff;
-      z-index: 1;
-
-      a {
-        display: block;
-        padding: 10px 0;
-        font-family: Montserrat Regular, sans-serif;
-        font-weight: 400;
-        font-size: 20px;
-        line-height: 20px;
-        text-align: center;
-        text-decoration: none;
-        color: #000000;
+      div {
+        display: none;
       }
 
-      > div {
-        border-bottom: 1px solid #000000;
+      a {
+        transition: 0.4s;
+        font-family: Montserrat Bold, sans-serif;
+        font-weight: 700;
+        font-size: 15px;
+        font-style: normal;
+        line-height: 20px;
+        color: #000000;
+        text-decoration: none;
+      }
+
+      a:hover {
+        color: #f02e5e;
       }
     }
   }

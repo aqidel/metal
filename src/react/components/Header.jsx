@@ -16,7 +16,9 @@ export default function Header() {
   return (
     <header>
       <div id='header-logo-wrap'>
-        <img src={logo} alt='logo'/>
+        <Link to='/' onClick={() => setState(false)}>
+          <img src={logo} alt='logo'/>
+        </Link>
         <div id='burger-wrap' onClick={() => setState(!state)}>
           <span className={'upper-line' + (state ? ' upper-line-active' : '')}/>
           <span className={'mid-line' + (state ? ' mid-line-active' : '')}/>

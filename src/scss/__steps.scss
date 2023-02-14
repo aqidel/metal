@@ -123,3 +123,24 @@
     }
   }
 }
+
+@media screen and (min-width: 1024px) {
+  #steps-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .step {
+
+      .step-number {
+        width: 120px;
+        box-sizing: border-box;
+      }
+
+      .step-text {
+        max-width: 800px;
+        box-sizing: border-box;
+      }
+    }
+  }
+}

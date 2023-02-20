@@ -67,4 +67,79 @@
     text-align: center;
     color: #000000;
   }
+
+  #metals-grid {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-areas: 
+      'iron'
+      'steel'
+      'car-scrap'
+      'engine'
+      'hms'
+      'lda';
+    row-gap: 20px;
+
+    .metal-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      width: 260px;
+      height: 260px;
+      box-sizing: border-box;
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+
+      .metal-item-bg {
+        width: 80%;
+        height: 80%;
+        box-sizing: border-box;
+        background-color: #ffffff;
+        opacity: 0.7;
+      }
+
+      > p {
+        position: absolute;
+        margin: 0;
+        font-family: Montserrat Bold, sans-serif;
+        font-weight: 400;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+        color: #000000;
+      }
+    }
+
+    #iron {
+      grid-area: iron;
+      background-image: url(../images/ferrous/iron.webp);
+    }
+
+    #steel {
+      grid-area: steel;
+      background-image: url(../images/ferrous/steel.webp);
+    }
+
+    #car-scrap {
+      grid-area: car-scrap;
+      background-image: url(../images/ferrous/car-scrap.webp);
+    }
+
+    #engine {
+      grid-area: engine;
+      background-image: url(../images/ferrous/engine.webp);
+    }
+
+    #hms {
+      grid-area: hms;
+      background-image: url(../images/ferrous/hms.webp);
+    }
+
+    #lda {
+      grid-area: lda;
+      background-image: url(../images/ferrous/lda.webp);
+    }
+  }
 }

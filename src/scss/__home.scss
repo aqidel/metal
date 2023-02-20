@@ -297,27 +297,32 @@ main {
     #metal-types-wrap {
       display: flex;
       flex-direction: column;
+      align-items: center;
       row-gap: 20px;
-      padding: 10px;
 
       a {
         display: flex;
         justify-content: center;
         align-items: center;
         position: relative;
+        width: 260px;
+        height: 260px;
         box-sizing: border-box;
         text-decoration: none;
-        background-color: #ffffff;
+        background-size: cover;
+        background-position: center center;
+        background-repeat: no-repeat;
 
-        img {
-          width: 100%;
-          max-width: 300px;
-          opacity: 0.3;
+        .metal-types-bg {
+          width: 80%;
+          height: 80%;
+          box-sizing: border-box;
+          background-color: #ffffff;
+          opacity: 0.8;
         }
 
-        h2 {
+        > h2 {
           position: absolute;
-          max-width: 50%;
           margin: 0;
           font-family: Montserrat Bold, sans-serif;
           font-weight: 700;
@@ -326,6 +331,14 @@ main {
           text-align: center;
           color: #000000;
         }
+      }
+
+      #ferrous-wrap {
+        background-image: url(../images/ferrous/ferrous_metal.webp);
+      }
+
+      #non-ferrous-wrap {
+        background-image: url(../images/non_ferrous/non_ferrous_metal.webp);
       }
     }
   }
@@ -402,6 +415,22 @@ main {
   }
 }
 
+@media screen and (min-width: 375px) {
+  main {
+
+    #we-buy {
+
+      #metal-types-wrap {
+
+        a {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 600px) {
   main {
     margin-top: 0;
@@ -432,13 +461,6 @@ main {
         justify-content: center;
         row-gap: 0;
         column-gap: 20px;
-
-        a {
-
-          img {
-            max-width: 350px;
-          }
-        }
       }
     }
   }
@@ -501,14 +523,12 @@ main {
       #metal-types-wrap {
 
         a {
+          width: 350px;
+          height: 350px;
 
           h2 {
             font-size: 40px;
             line-height: 40px;
-          }
-          
-          img {
-            max-width: 400px;
           }
         }
       }
@@ -526,14 +546,12 @@ main {
         column-gap: 60px;
         
         a {
+          width: 500px;
+          height: 500px;
 
           h2 {
             font-size: 50px;
             line-height: 50px;
-          }
-
-          img {
-            max-width: 500px;
           }
         }
       }

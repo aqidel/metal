@@ -61,13 +61,13 @@ export default function Home() {
       <div id='we-buy'>
         <h2>Мы покупаем все виды металла</h2>
         <div id='metal-types-wrap'>
-          <Link to='/ferrous'>
-            <img src={ferrous} alt='img'/>
-            <h2>Черные металлы</h2>
+          <Link id='ferrous-wrap' to='/ferrous'>
+            <div className='metal-types-bg'/>
+            <h2>Черные<br/>металлы</h2>
           </Link>
-          <Link to='/non-ferrous'>
-            <img src={non_ferrous} alt='img'/>
-            <h2>Цветные металлы</h2>
+          <Link id='non-ferrous-wrap' to='/non-ferrous'>
+            <div className='metal-types-bg'/>
+            <h2>Цветные<br/>металлы</h2>
           </Link>
         </div>
       </div>

@@ -80,8 +80,6 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      //width: 260px;
-      //height: 260px;
       box-sizing: border-box;
       background-size: cover;
       background-position: center center;
@@ -130,6 +128,30 @@
     #lda {
       background-image: url(../images/ferrous/lda.webp);
     }
+
+    #aluminium {
+      background-image: url(../images/non_ferrous/aluminium.webp);
+    }
+
+    #brass {
+      background-image: url(../images/non_ferrous/brass-bronze.webp);
+    }
+
+    #cables {
+      background-image: url(../images/non_ferrous/cable.webp);
+    }
+
+    #copper {
+      background-image: url(../images/non_ferrous/copper.webp);
+    }
+
+    #lead {
+      background-image: url(../images/non_ferrous/lead.webp);
+    }
+
+    #batteries {
+      background-image: url(../images/non_ferrous/batteries.webp);
+    }
   }
 }
 
@@ -140,6 +162,12 @@
       grid-template-columns: 300px;
       grid-template-rows: repeat(6, 300px);
     }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #call-us {
+    margin-top: 0;
   }
 }
 

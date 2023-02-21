@@ -1,5 +1,6 @@
 import React from 'react';
 import Stars from '../Stars';
+import Steps from '../Steps';
 
 export default function Ferrous() {
   return (
@@ -51,6 +52,7 @@ export default function Ferrous() {
           </div>
         </div>
       </div>
+      <Steps/>
     </React.Fragment>
   );
 }

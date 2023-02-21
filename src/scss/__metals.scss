@@ -70,14 +70,9 @@
 
   #metals-grid {
     display: grid;
-    grid-template-rows: repeat(6, 1fr);
-    grid-template-areas: 
-      'iron'
-      'steel'
-      'car-scrap'
-      'engine'
-      'hms'
-      'lda';
+    justify-content: center;
+    grid-template-columns: 260px;
+    grid-template-rows: repeat(6, 260px);
     row-gap: 20px;
 
     .metal-item {
@@ -85,8 +80,8 @@
       justify-content: center;
       align-items: center;
       position: relative;
-      width: 260px;
-      height: 260px;
+      //width: 260px;
+      //height: 260px;
       box-sizing: border-box;
       background-size: cover;
       background-position: center center;
@@ -113,33 +108,58 @@
     }
 
     #iron {
-      grid-area: iron;
       background-image: url(../images/ferrous/iron.webp);
     }
 
     #steel {
-      grid-area: steel;
       background-image: url(../images/ferrous/steel.webp);
     }
 
     #car-scrap {
-      grid-area: car-scrap;
       background-image: url(../images/ferrous/car-scrap.webp);
     }
 
     #engine {
-      grid-area: engine;
       background-image: url(../images/ferrous/engine.webp);
     }
 
     #hms {
-      grid-area: hms;
       background-image: url(../images/ferrous/hms.webp);
     }
 
     #lda {
-      grid-area: lda;
       background-image: url(../images/ferrous/lda.webp);
+    }
+  }
+}
+
+@media screen and (min-width: 425px) {
+  #what-we-buy {
+
+    #metals-grid {
+      grid-template-columns: 300px;
+      grid-template-rows: repeat(6, 300px);
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #what-we-buy {
+
+    #metals-grid {
+      grid-template-columns: repeat(2, 300px);
+      grid-template-rows: repeat(3, 300px);
+      column-gap: 20px;
+    }
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #what-we-buy {
+
+    #metals-grid {
+      grid-template-columns: repeat(3, 300px);
+      grid-template-rows: repeat(2, 300px);
     }
   }
 }

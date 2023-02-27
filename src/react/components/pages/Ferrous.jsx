@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import Stars from '../Stars';
 import Steps from '../Steps';
 
 export default function Ferrous() {
+
+  useEffect(() => {document.title = 'Черные металлы'}, []);
+
   return (
     <React.Fragment>
       <div id='call-us'>

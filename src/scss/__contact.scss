@@ -1,0 +1,166 @@
+#contacts-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 74px;
+  padding: 50px 15px;
+  background-image: linear-gradient(220deg, #ff9a68 0%, #f2295b 100%);
+
+  > h2 {
+    margin: 0 0 20px 0;
+    font-family: Montserrat Light, sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 16px;
+    text-transform: uppercase;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+  > h1 {
+    margin: 0 0 100px 0;
+    font-family: Montserrat Bold, sans-serif;
+    font-weight: 700;
+    font-size: 28px;
+    line-height: 28px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  #contacts {
+    max-width: 400px;
+    box-sizing: border-box;
+    padding: 30px;
+    background-color: #ffffff;
+    background-image: url(../images/bg-icons.png);
+    background-position: bottom center;
+    background-repeat: no-repeat;
+
+    > h3 {
+      margin: 0 0 20px 0;
+      font-family: Montserrat Bold, sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 24px;
+      text-align: center;
+      color: #e95253;
+    }
+
+    > h4 {
+      margin: 0 0 20px 0;
+      font-family: Montserrat Regular, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
+      text-align: center;
+      color: #000000;
+    }
+
+    > p {
+      margin: 0;
+      font-family: Montserrat Light, sans-serif;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 14px;
+      text-align: center;
+      color: #54595f;
+    }
+
+    .divider {
+      margin: 10px 0;
+      border-top: 1px solid #dddddd;
+    }
+  }
+}
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 10px;
+
+  > h1 {
+    margin: 0 0 50px 0;
+    font-family: Montserrat Light, sans-serif;
+    font-weight: 300;
+    font-size: 30px;
+    line-height: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000000;
+  }
+
+  #faq-grid-container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+
+    .faq-grid-element {
+      max-width: 400px;
+      box-sizing: border-box;
+      border-bottom: 1px solid #e8e8e8;
+      padding: 45px 10px;
+  
+      > h3 {
+        margin: 0 0 20px 0;
+        font-family: Montserrat Regular, sans-serif;
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 25px;
+        color: #000000;
+      }
+  
+      > p {
+        margin: 0;
+        font-family: Montserrat Light, sans-serif;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 25px;
+        color: #777777;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 600px) {
+  #contacts-main {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  #contacts-main {
+
+    > h1 {
+      font-size: 40px;
+      line-height: 40px;
+    }
+
+    > h2 {
+      font-size: 18px;
+      line-height: 18px;
+    }
+  }
+
+  #faq {
+
+    #faq-grid-container {
+      grid-template-columns: repeat(2, 1fr);
+      column-gap: 40px;
+    }
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  #contacts-main {
+
+    #contacts {
+      padding: 50px 30px;
+
+      > h3 {
+        font-size: 35px;
+        line-height: 42px;
+      }
+    }
+  }
+}

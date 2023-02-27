@@ -1,12 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import Stars from '../Stars';
 import Steps from '../Steps';
-import ferrous from '../../../images/ferrous/ferrous_metal.webp';
-import non_ferrous from '../../../images/non_ferrous/non_ferrous_metal.webp';
 import arrow from '../../../images/arrow.webp';
 
 export default function Home() {
+
+  useEffect(() => {document.title = 'БашМетЛом'}, []);
+
   return (
     <main>
       <div id='main-info-wrap'>
